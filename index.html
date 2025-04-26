@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Habit Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Habit Tracker</h1>
+    <p class="streak-counter">Current Streak: <span id="streak-count">0</span> days</p>
+
+    <div class="habit-input">
+      <input type="text" id="habit-input" placeholder="Add a habit...">
+      <button onclick="addHabit()">Add Habit</button>
+    </div>
+
+    <div id="habit-list"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,118 @@
+:root {
+    --primary-color: #4CAF50;
+    --accent-color: #FF5722;
+    --background-color: #f0f0f0;
+    --border-radius: 12px;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    background-color: white;
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .streak-counter {
+    font-size: 18px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+  }
+  
+  .habit-input {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .habit-input input {
+    padding: 12px;
+    border-radius: var(--border-radius);
+    border: 1px solid #ccc;
+    width: 70%;
+  }
+  
+  .habit-input button {
+    padding: 12px 20px;
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .habit-input button:hover {
+    background-color: var(--accent-color);
+  }
+  
+  #habit-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  
+  .habit {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: var(--border-radius);
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s;
+  }
+  
+  .habit.complete {
+    background-color: #d4edda;
+    text-decoration: line-through;
+  }
+  
+  .habit button {
+    border: none;
+    background-color: transparent;
+    color: var(--primary-color);
+    cursor: pointer;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  .habit button:hover {
+    color: var(--accent-color);
+  }
+  
+  @keyframes grow {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .habit {
+    animation: grow 0.5s ease-out;
+  }
+  
+  
